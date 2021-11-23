@@ -11,6 +11,7 @@ import { EventhandlingComponent } from './eventhandling/eventhandling.component'
 import { TwowaydatabindingComponent } from './twowaydatabinding/twowaydatabinding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
+import { PipedemoComponent } from './pipedemo/pipedemo.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DirectivesComponent } from './directives/directives.component';
     PropertybindingComponent,
     EventhandlingComponent,
     TwowaydatabindingComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    PipedemoComponent
   ],
   imports: [
     BrowserModule,
