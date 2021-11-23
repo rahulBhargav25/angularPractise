@@ -7,6 +7,10 @@ import { FirstcmpComponent } from './firstcmp/firstcmp.component';
 import { SecondcmpComponent } from './secondcmp/secondcmp.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { PropertybindingComponent } from './propertybinding/propertybinding.component';
+import { EventhandlingComponent } from './eventhandling/eventhandling.component';
+import { TwowaydatabindingComponent } from './twowaydatabinding/twowaydatabinding.component';
+import { FormsModule } from '@angular/forms';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +18,15 @@ import { PropertybindingComponent } from './propertybinding/propertybinding.comp
     FirstcmpComponent,
     SecondcmpComponent,
     InterpolationComponent,
-    PropertybindingComponent
+    PropertybindingComponent,
+    EventhandlingComponent,
+    TwowaydatabindingComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
