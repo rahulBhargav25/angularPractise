@@ -1,0 +1,61 @@
+<form #registerForm=ngForm (ngSubmit)="registerUser(registerForm)">
+    <div>
+        <label>Name:</label>
+        <input 
+            type="text" 
+            required 
+            pattern="[a-z][A-Z]*"
+            name="uname"
+            ngModel
+            #userName=ngModel
+        >
+    </div>
+    <div *ngIf="userName.touched">
+        <div *ngIf="userName.errors?.['required']">
+            Name is required
+        </div>
+        <div *ngIf="userName.errors?.['pattern']">
+            Name is invalid
+        </div>
+    </div>
+    <div>
+        <label>Contact:</label>
+        <input 
+            type="text" 
+            required
+            pattern="[0-9]{10}$"
+            name="contact"
+            ngModel
+            #userContact=ngModel
+        >
+    </div>
+    <div *ngIf="userContact.touched">
+        <div *ngIf="userContact.errors?.['required']">
+            Contact is required
+        </div>
+        <div *ngIf="userContact.errors?.['pattern']">
+            Contact is invalid
+        </div>
+    </div>
+    <div>
+        <label>Email:</label>
+        <input 
+            type="text" 
+            required
+            pattern="^\w+@[a-zA-Z_]+?\.[a-zA-z]{2,3}$"
+            name="email"
+            ngModel
+            #userEmail=ngModel
+        
+        >
+    </div>
+    <div *ngIf="userEmail.touched">
+        <div *ngIf="userEmail.errors?.['required']">
+            Contact is required
+        </div>
+        <div *ngIf="userEmail.errors?.['pattern']">
+            Contact is invalid
+        </div>
+    </div>
+    <button type="submit" [disabled]="registerForm.invalid">Register</button>
+</form>

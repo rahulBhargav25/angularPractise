@@ -16,6 +16,11 @@ import { Parent1Component } from './parent1/parent1.component';
 import { Child1Component } from './child1/child1.component';
 import { Parent2Component } from './parent2/parent2.component';
 import { Child2Component } from './child2/child2.component';
+import { ListComponent } from './list/list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { EmphttpComponent } from './emphttp/emphttp.component';
+import { TemplatedrivenformComponent } from './templatedrivenform/templatedrivenform.component';
+import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +36,17 @@ import { Child2Component } from './child2/child2.component';
     Parent1Component,
     Child1Component,
     Parent2Component,
-    Child2Component
+    Child2Component,
+    ListComponent,
+    EmphttpComponent,
+    TemplatedrivenformComponent,
+    ReactiveformsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
