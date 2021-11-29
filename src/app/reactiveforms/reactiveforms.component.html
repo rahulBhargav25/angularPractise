@@ -4,14 +4,20 @@
         <input 
             type="text"
             formControlName="uname"
-        />   
+        /> 
+        <div *ngIf="frm['uname'].invalid && frm['uname'].touched">
+            Name is required
+        </div>  
     </div>
     <div>
         <label>Password:</label>
         <input 
             type="text"
             formControlName="password"
-        />    
+        /> 
+        <div *ngIf="frm['password'].invalid && frm['password'].touched">
+            Password is required
+        </div>    
     </div>
     <button type="submit">Login</button>
 </form>    

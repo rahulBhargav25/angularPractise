@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmphttpComponent } from './emphttp/emphttp.component';
 import { TemplatedrivenformComponent } from './templatedrivenform/templatedrivenform.component';
 import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component';
+import { RoutingComponent } from './routing/routing.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component'
     ListComponent,
     EmphttpComponent,
     TemplatedrivenformComponent,
-    ReactiveformsComponent
+    ReactiveformsComponent,
+    RoutingComponent
   ],
   imports: [
     BrowserModule,
