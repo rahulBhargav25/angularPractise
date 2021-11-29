@@ -9,7 +9,7 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { PropertybindingComponent } from './propertybinding/propertybinding.component';
 import { EventhandlingComponent } from './eventhandling/eventhandling.component';
 import { TwowaydatabindingComponent } from './twowaydatabinding/twowaydatabinding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { PipedemoComponent } from './pipedemo/pipedemo.component';
 import { Parent1Component } from './parent1/parent1.component';
@@ -46,7 +46,8 @@ import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
